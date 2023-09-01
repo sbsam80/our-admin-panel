@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-bg{
+.bg {
+
     font-family: 'Poppins', sans-serif;
-    background: #ececec;
+    background: #18aab2;
 }
 
 /*------------ Login container ------------*/
@@ -54,10 +55,10 @@ bg{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    
 }
-body {
-    background-color: #861ac5;
+.bg2 {
+    background-color: #1a4ec5;;
 }
 /*body{
     background: url("images/bg.jpg");
@@ -236,4 +237,117 @@ i{
     border-radius: 10px;
     box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
     transition: .5s ease-in-out;
+}
+/*          log in 4             */
+
+/* Google Poppins Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --primary-font-family: 'Poppins', sans-serif;
+    --light-white:#f5f8fa;
+    --gray:#5e6278;
+    --gray-1:#e3e3e3;
+}
+body{
+	
+    font-family:var(--primary-font-family);
+    font-size: 14px;
+} 
+
+/* Main CSS */ 
+.wrapper{
+    padding:0 0 100px;
+    background-image:url('images/bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size:contain;
+    min-height: 100%;
+}
+
+
+.wrapper .logo img{
+    max-width:40%;
+}
+.wrapper input{
+    background-color: transparent;
+    border-color: aqua;
+    color: black; 
+}
+.wrapper input:focus{ 
+    box-shadow: none;
+}
+.wrapper .submit_btn{
+    padding:15px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.wrapper .login_with{
+    padding:15px;
+    font-size: 15px;
+    font-weight: 500;
+    transition:0.3s ease-in-out;
+}
+.wrapper .submit_btn:focus,
+.wrapper .login_with:focus{
+	color: #126d79;
+    box-shadow: none;
+}
+.wrapper .login_with:hover{
+    background-color:var(--gray-1);
+    border-color:var(--gray-1);
+}
+.wrapper .login_with img{
+    max-width: 8%;
+}
+.bg1 {
+ background-color: transparent;
+ border-radius: 2.25rem;
+ background-filter: blur(8px);
+}        
+.hovbtn {
+	width: 100%;
+	margin: 10px 0 0 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #26d3d3;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.hovspan {
+	height: 100%;
+    width: 0;
+    background: aqua;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.hovbtn:hover .hovspan{
+	width: 100%;
+}
+.hovbtn:hover{
+	border: none;
+}
+.img {
+	width: 20px;
+}
+.inputbtn {
+	
+	border-radius: 30px;
 }
